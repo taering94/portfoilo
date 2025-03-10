@@ -1,0 +1,286 @@
+body {
+    font-family: "42dot Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #e8e8e8;
+    color:#251e3d;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 헤더영역 */
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  background-color:#251e3d;
+  color:#251e3d;
+
+  height: 70px;
+  align-items: center;
+  padding: 0 30px;
+  
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  font-weight: 500;
+  /* 고정 */
+  position: fixed;
+  /* 양 끝과 윗쪽에 붙음 */
+  top:0;
+  left:0;
+  right:0;
+}
+
+ul{
+  color:white;
+  display:flex;
+  align-items: center;
+  gap:20px;
+  /* 갭을 넣을려면 디스플레이가 설정되있어야힘 */
+}
+
+.nav_list{ 
+  display:inline;
+  align-items: center;
+  color:white;
+  height: 20px;
+  display: flex;
+  /* padding: 10px; */
+}
+
+/* #nav_pf{
+  color:white;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  border-radius: 8px;
+  border : 1px solid #f24017;
+} */
+
+.nav_list:hover{
+  color: aquamarine;
+  transform: scale(1.05);/* 크기가 1.1배 커진다 */
+}
+/* .nav_list:active{
+  color:rgb(228, 255, 152);
+} */
+ /* 길게누른효과 */
+
+/* 로고이미지 */
+.logo{
+  width: 150px;
+  padding:4px 0 0 0;
+}
+
+.logo:hover{
+  transform: scale(1.05)
+}
+
+/* 메인 */
+main{
+  margin-top:100px;
+}
+
+
+/* 자기소개섹션 -------*/
+
+#about_01{
+  width: 1280px;
+  padding: 60px 30px;
+  height: 500px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+/* align-items: flex-start; */
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+
+.container{
+  /* 기본박스 사이즈 */
+  max-width: 1280px;
+}
+
+.title{
+  /* 타이틀 기본스타일 */
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.text-defalut{
+  /* 텍스트 기본스타일 */
+  color:#251e3d;
+}
+
+.text-primary{
+  /* 텍스트 컬러스타일 2 */
+  color:#f24017;
+}
+
+.about_name{
+  font-size: 100px;
+  font-weight:700;
+  letter-spacing: -4px;
+  margin-bottom: 30px;
+}
+
+.text_body{
+  /* 텍스트 바디스타일 */
+  font-size: 50px;
+  font-weight:100;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.btn_mail{
+  display: flex;
+  align-items: center;
+
+  border-radius: 100px;
+  border : 1px solid #f24017;
+  background-color: #f24017;
+
+  font-size: 20px;
+  font-weight:200;
+  color: white;
+
+  padding: 0px 50px;
+  margin-top: 80px;
+  height: 70px;
+  width: 218px;
+}
+
+.btn_mail:hover{
+  background-color:aquamarine;
+  transform: scale(1.05);
+  /* 크기가 1.1배 커진다 */
+  transition: all 0.1s ease-in-out;
+  /* 모든걸 0.5초동안 애니메이션(이즈인)을 실행한다 */
+  color: #f24017;
+  
+  font-weight:500;
+}
+
+/* .btn_mail:active{
+  background-color:rgb(234, 255, 157); 
+} */
+
+
+/* 프로젝트_섹션 ---------*/
+
+
+.pf_02{
+  display: flex;
+  align-items:flex-start;
+  
+  /* overflow 자동스크롤추가 */
+  /* padding: 0 50px; */ 
+}
+
+.project_box{
+  width: 1280px;
+  padding: 50px 34px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.project_title{
+  display: flex;
+  /* flex-direction:column; */
+}
+
+.project_list{
+  display:flex;
+  flex-direction:row;
+  gap:20px; 
+}
+
+.list_1{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  flex-shrink: 0;
+  /* margin-right: 20px; */
+  width: 400px;
+  height:auto;
+  border-radius: 30px; 
+  /* background-color: #251e3d; */
+  border : 1px solid #f24017;
+ 
+}
+
+
+.list_1:hover{
+  color: #e8e8e8;
+  transform: scale(1.02);
+  background-color: #251e3d;
+  border : 1px solid #f24017;
+  color: #e8e8e8;
+}
+
+.list_text{
+padding: 46px 0 42px 0;
+}
+
+.project-name{
+  font-size: 40px;
+  font-weight:600;
+  margin-bottom: 14px;
+}
+
+.description{
+  margin-bottom: 16px;
+  
+}
+
+.date{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.btn_small{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project_img{
+  margin-top: 30px;
+  width: 320px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  border-radius: 10px; 
+}
+
+
+/* 푸터 */
+footer{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:30px;
+  gap: 80px;
+  background-color: #fff;
+
+}
+
+.insta_img{
+width: 30px;
+}
